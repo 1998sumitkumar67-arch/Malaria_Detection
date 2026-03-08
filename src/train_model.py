@@ -18,7 +18,7 @@ test_datagen = ImageDataGenerator(rescale=1./255)
 # Training Data
 train_data = train_datagen.flow_from_directory(
     dataset_path + "/train",
-    target_size=(224,224),
+    target_size=(128,128),
     batch_size=32,
     class_mode="binary"
 )
@@ -26,7 +26,7 @@ train_data = train_datagen.flow_from_directory(
 # Validation Data
 validation_data = test_datagen.flow_from_directory(
     dataset_path + "/validation",
-    target_size=(224,224),
+    target_size=(128,128),
     batch_size=32,
     class_mode="binary"
 )
@@ -34,7 +34,7 @@ validation_data = test_datagen.flow_from_directory(
 # Test Data
 test_data = test_datagen.flow_from_directory(
     dataset_path + "/test",
-    target_size=(224,224),
+    target_size=(128,128),
     batch_size=32,
     class_mode="binary"
 )

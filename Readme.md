@@ -36,7 +36,7 @@ Dataset split:
 
 The following preprocessing techniques are applied:
 
-- Image resizing to **224x224**
+- Image resizing to **128x128**
 - Pixel normalization (0–1 range)
 - Data augmentation
 
